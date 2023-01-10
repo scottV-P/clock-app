@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+  </style>
+  <title>Frontend Mentor | Clock App</title>
+</head>
+<body class="background-tint nighttime">
+  <main class="container">
+    <div class="quoteContainer" id="quoteContainer">
+      <h6 class="quote" id="quote">“The science of operations, as derived from mathematics more especially, is a science of itself, and has its own abstract truth and value.”</h6> 
+      <img id="refreshIcon" class="refreshIcon" src="./assets/desktop/icon-refresh.svg">
+      <h5 class="author" id="author">Ada Lovelace</h5>
+    </div>
+    <div class="bottom-container">
+      <div class="timeContainer timeContainerLess" id="timeContainer">
+        <div class="greetingContainer">
+          <img id="timeIcon" class="time-icon" src="./assets/desktop/icon-sun.svg">
+          <h4 id="greeting" class="greeting">GOOD MORNING, IT'S CURRENTLY</h4>    
+        </div>   
+          <h2 id="time" class="time">11:37<span class="timezone" id="timezone">BST</span></h2>
+          <h5 id="location" class="location">IN HOUSTON, US</h5>
+      </div>
+      <button class="moreButton " id="moreBtn">MORE<span><img class="arrow-down" src="assets/desktop/icon-arrow-down.svg"></span></button>
+      <button class="lessButton hidden" id="lessBtn">LESS<span><img class="arrow-up" src="assets/desktop/icon-arrow-up.svg"></span></button>
+    </div>
+  </main>
+  <div class="more-container hidden" id="moreContainer" >
+    <div class="more-left">
+      <div class="more1">
+        <h6>CURRENT TIMEZONE</h6>
+        <h1 id="currentTimezone">Europe</h1>
+      </div>
+      <div class="more2">
+        <h6>DAY OF THE YEAR</h6>
+        <h1 id="dayOfYear">295</h1>
+      </div>
+    </div>
+    <div class="more-right">
+      <div class="more3">
+        <h6>DAY OF THE WEEK</h6>
+        <h1 id="dayOfWeek">5</h1>
+      </div>
+      <div class="more4">
+        <h6>WEEK NUMBER</h6>
+        <h1 id="weekNumber">42</h1>
+    </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
